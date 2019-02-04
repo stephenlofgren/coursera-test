@@ -99,20 +99,20 @@ header {
 /*desktop*/
 @media (min-width: 992px) {
     #col1 {
-        width: 33%;
+        width: 33.3%;
     }
     #col1 section {
         margin-right: 10px;
     }
     #col2 {
-        width: 33%;
+        width: 33.3%;
     }
     #col2 section {
         margin-left: 10px;
         margin-right: 10px;
     }
     #col3 {
-        width: 33%;
+        width: 33.3%;
     }
     #col3 section {
         margin-left: 10px;
