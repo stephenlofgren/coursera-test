@@ -1,0 +1,120 @@
+/*
+desktop version > 992px
+tablet between 768px and 991px inclusive
+mobile <= 767px
+*/
+
+body {
+    margin: 0px;
+}
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px;
+}
+.container {
+    position: relative;
+}
+.container * {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+}
+.sub_menu {
+    background-color: gray;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 20px;
+}
+.menu_label {
+    float:right;
+    clear: left;
+    border-style:solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 2px 20px 2px;                
+}
+.menu_content {
+    margin: 40px 15px 15px;
+    clear: both;
+}
+#lbl_chicken {
+    background-color: #d59898;
+}
+#lbl_beef {
+    background-color: #c14543;
+    color: white;
+}
+#lbl_sushi {
+    background-color: #e5d198;
+}
+
+/*mobile*/
+@media (max-width: 767px) {
+    #col1 {
+        width: 100%;
+    }
+    #col1 section {
+        margin-top: 0px;
+    }
+    #col2 {
+        width: 100%;
+    }
+    #col2 section {
+        margin-top: 0px;
+    }
+    #col3 {
+        width: 100%;
+    }
+    #col3 section {
+        margin-top: 0px;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #col1 {
+        width: 50%;
+    }
+    #col1 section {
+        margin-right: 10px;
+    }
+    #col2 {
+        width: 50%;
+    }
+    #col2 section {
+        margin-left: 10px;
+    }
+    #col3 {
+        width: 100%;
+    }
+    #col3 section {
+        margin-top: 0px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 992px) {
+    #col1 {
+        width: 33%;
+    }
+    #col1 section {
+        margin-right: 10px;
+    }
+    #col2 {
+        width: 33%;
+    }
+    #col2 section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #col3 {
+        width: 33%;
+    }
+    #col3 section {
+        margin-left: 10px;
+    }
+}
