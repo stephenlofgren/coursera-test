@@ -18,10 +18,12 @@ header {
 }
 .container * {
     box-sizing: border-box;
+    padding: 0px 10px 0px 10px;
 }
 .column {
     float: left;
-    padding: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 10px 0px;
 }
 .sub_menu {
     background-color: gray;
@@ -38,7 +40,7 @@ header {
     padding: 2px 20px 2px;                
 }
 .menu_content {
-    margin: 40px 15px 15px;
+    margin: 40px    15px 15px;
 }
 #lbl_chicken {
     background-color: #d59898;
