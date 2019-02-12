@@ -20,8 +20,8 @@
 </head>
 
 <body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
+  <div>
+    <nav id="header-nav" class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <div class="navbar-brand">
@@ -39,7 +39,7 @@
         </div>
 
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <ul id="nav-list" class="visible-xs nav navbar-nav nav-bar-right">
+          <ul id="nav-list" class="visible-xs nav navbar-nav">
             <li><a href="#chicken_section"><span>Chicken</span></a></li>
             <li><a href="#beef_section"><span>Beef</span></a></li>
             <li><a href="#sushi_section"><span>Sushi</span></a></li>
@@ -47,11 +47,10 @@
         </div>
       </div>
     </nav>
-  </header>
-<div id="content">
-  <div id="page-title" class="text-center">Our Menu</div>
-  <div class="container-fluid">
-    <div class="row menu-row">
+  </div>
+  <div id="content" class="container-fluid">
+    <div id="page-title" class="text-center">Our Menu</div>
+    <div class=" menu-row">
       <section id="chicken_section" class="menu-section col-xs-12">
         <div class="section-title text-center">Chicken</div>
         <div class="section_body">
@@ -158,10 +157,9 @@
               ullamco proident commodo.</p>
   
           </div>
-        </section>  
+      </section>  
     </div>
   </div>
-</div>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
