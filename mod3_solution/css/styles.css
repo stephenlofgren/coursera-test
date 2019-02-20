@@ -70,13 +70,14 @@ body {
 
 .menu-section {
     margin-top: 20px;
-    height: 700px;
+    margin-bottom: 20px;
 }
 
 .menu-section > div {
     background: rgb(224, 216, 216);
     margin:0px 0px 0px 10px;
     padding: 10px;
+    height: 700px;
 }
 
 .section-title {
