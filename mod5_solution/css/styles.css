@@ -369,6 +369,10 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
+
+  .review-rating {
+    padding:40px;
+  }
 }
 
 
