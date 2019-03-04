@@ -47,16 +47,26 @@
   var messages = names.map(name => getMessage(name));
   messages.map(message => console.log(message));
 
+  const greeter = (aac, cur, idx, src) => {
+    if(hasJ(cur)){
+      aac.bye.push(byeSpeaker.speakSimple(cur));
+    }
+    else {
+      aac.hello.push(helloSpeaker.speakSimple(cur));
+    }
+    return aac;
+  }
+
   /*this is much more efficient*/
-  const greeter = (acc, cur, idx, src) => {
-    acc[idx] = getMessage(cur);
-    return acc;
-  };
+  //const greeter = (acc, cur, idx, src) => {
+  //  acc[idx] = getMessage(cur);
+  //  return acc;
+  //};
 
-  var messages = new Array(names.length);
-  names
-    .reduce(greeter, messages)
-    .map(m => console.log(m));
-
+  /*this is probably a little closer to what you were looking for*/
+  var messages = {hello: [], bye: []};
+  messages = names.reduce(greeter, messages);
+  messages.hello.map(m => console.log(m));
+  messages.bye.map(m => console.log(m));
 })();
 
