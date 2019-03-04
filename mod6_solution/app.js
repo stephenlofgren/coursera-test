@@ -27,18 +27,24 @@
         var getMessage = function() {
             var c = countWords();
             if(c == 0){
-                return "Please enter data first";
+                $scope.message = "Please enter data first";
+                $scope.message_style = {"color": "red"};
+                $scope.text_style = {"border-color": "red", "border-style": "solid"};
             } 
             else if(c <= 3){
-                return "Enjoy!"
+                $scope.message = "Enjoy!"
+                $scope.message_style = {"color": "black"};
+                $scope.text_style = {"border-color": "green", "border-style": "solid"};
             }
             else if(c > 3){
-                return "Too Much!"
+                $scope.message = "Too Much!"
+                $scope.message_style = {"color": "black"};
+                $scope.text_style = {"border-color": "green", "border-style": "solid"};
             }
         } 
 
         $scope.checkIfTooMuch = function(){
-            $scope.message = getMessage();
+             getMessage();
         };
 
     };
