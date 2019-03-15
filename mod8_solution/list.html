@@ -1,0 +1,10 @@
+<div class="container menu-list">
+<ul ng-if="list.foundItems">
+    <li ng-repeat="item in list.foundItems">
+        <label class="col-sm-5">{{item.name}}</label>
+        <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+</ul>
+<h2 ng-if="!list.foundItems">Please Search for Items</h2>
+<h2 ng-if="list.foundItems.length == 0">No Items Found</h2>
+</div>
