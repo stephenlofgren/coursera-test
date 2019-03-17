@@ -1,0 +1,10 @@
+<a ui-sref="home">Home</a> 
+&lt; <a ui-sref="categories">Category List</a>
+&lt; <span>Category Items</span>
+<h3>Category Items: </h3>
+<div class="container">
+    <div class="col-sm-6" ng-repeat="item in $ctrl.categoryItems">
+        <label>{{item.name}}</label>
+        <p>{{item.description}}</p>
+    </div>
+</div>
