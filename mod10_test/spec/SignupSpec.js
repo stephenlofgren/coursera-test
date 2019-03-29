@@ -43,15 +43,16 @@ describe("signupController", function() {
     module('public');
   });
 
+
+
   beforeEach(inject(function ($injector) {
     //_$controller_, _$scope_, MenuServiceMock
     $controller = $injector.get("$controller");
+    MenuService = $injector.get("MenuService");
     MenuServiceMock = $injector.get("MenuServiceMock");
     MyInfoServiceMock = $injector.get("MyInfoServiceMock");
     scopeMock = $injector.get("$scope");
-    //$httpBackend = $injector.get('$httpBackend');
-    //ApiBasePath = $injector.get('ApiBasePath');
-
+    
     signupController =
       $controller('SignUpController',
                   {scope: scopeMock, MenuService: MenuServiceMock, MyInfoService: MyInfoServiceMock});
